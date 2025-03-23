@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px; /* Adiciona um espaçamento externo */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #c52435;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #d81125;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.result-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.item-name {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.item-value {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsividade para tablets */
+@media (min-width: 600px) {
+  .container {
+      padding: 30px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  label {
+      font-size: 18px;
+  }
+
+  input {
+      font-size: 18px;
+  }
+
+  button {
+      font-size: 18px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  .item-name {
+      font-size: 16px;
+  }
+
+  .item-value {
+      font-size: 20px;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 599px) {
+  .container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 22px;
+  }
+
+  label {
+      font-size: 14px;
+  }
+
+  input {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 14px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  .item-name {
+      font-size: 12px;
+  }
+
+  .item-value {
+      font-size: 16px;
+  }
+}
